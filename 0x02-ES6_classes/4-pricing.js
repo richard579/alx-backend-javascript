@@ -10,7 +10,7 @@ class Pricing {
    * @param {Number} amount
    */
   set amount(amount) {
-    if (typeof name !== 'number') {
+    if (typeof amount !== 'number') {
       throw new TypeError('Amount must be a number');
     }
     this._amount = amount;
@@ -52,7 +52,7 @@ class Pricing {
       throw new TypeError('conversionRate must be a number');
     }
 
-  return amount * conversionRate;
+    return amount * conversionRate;
   }
 }
 
