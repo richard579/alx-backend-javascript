@@ -9,7 +9,7 @@ export default class Car {
     return this._brand;
   }
 
-  set brand() {
+  set brand(value) {
     this._brand = value;
   }
 
