@@ -25,7 +25,7 @@ class HolbertonCourse {
   set length(length) {
     if (typeof length !== 'number') {
       throw new TypeError('Length must be a number');
-    }       
+    }
     this._length = length;
   }
 
@@ -33,7 +33,7 @@ class HolbertonCourse {
     return this._length;
   }
 
-  /**   
+  /**
    * @param {Array} students
    */
   set students(students) {
@@ -43,7 +43,7 @@ class HolbertonCourse {
       throw new TypeError('Students must be an Array');
     }
   }
-   
+
   get students() {
     return this._students;
   }
