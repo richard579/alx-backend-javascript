@@ -7,7 +7,7 @@ function updateStudentGradeByCity(students, city, newGrades) {
         return {
           ...student,
           grade: filteredGrades[0].grade,
-	};
+        };
       }
       return {
         ...student,
