@@ -37,7 +37,7 @@ function countStudents(fileName) {
         for (const [key, value] of Object.entries(fields)) {
           if (key !== 'field') {
             output += `Number of students in ${key}: ${value}. `;
-            output +=  `List: ${students[key].join(', ')}\n`;
+            output += `List: ${students[key].join(', ')}\n`;
           }
         }
         resolve(output);
@@ -49,7 +49,7 @@ function countStudents(fileName) {
 app.get('/', (request, response) => {
   response.send('Hello Holberton School!');
 });
-app.get('/students', (request, response) => {  countStudents(process.argv[2].toString()).then((output) => {
+app.get('/students', (request, response) => {
   countStudents(process.argv[2].toString()).then((output) => {
     response.send(['This is the list of our students', output].join('\n'));
   }).catch(() => {
